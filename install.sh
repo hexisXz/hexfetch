@@ -1,3 +1,3 @@
 #!/bin/sh
 
-gcc hexfetch.c -o hexfetch && sudo mv hexfetch /bin/
+git clone https://github.com/hexisXz/hexfetch.git && cd hexfetch && gcc hexfetch.c -o hexfetch && sudo mv hexfetch /bin/
