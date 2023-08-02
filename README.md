@@ -7,7 +7,7 @@
 
 hexfetch is a simple program that displays system information. 
 
-at the moment it doesn't display much information and that is by choice but i might add more soon
+at the moment it doesn't display that much information and that is by choice but i might add more soon
 
 
 
