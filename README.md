@@ -13,6 +13,8 @@ at the moment it doesn't display that much information and that is by choice but
 
 # install
 
+before you install hexfetch you need to install figlet if you want ascii art
+
 ``` sh
 sh <(curl -v -L https://raw.githubusercontent.com/hexisXz/hexfetch/main/install.sh)
 ```
