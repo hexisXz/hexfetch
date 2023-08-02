@@ -1,6 +1,7 @@
 
 
-![HEXFETCH](https://github.com/hexisXz/hexfetch/assets/71829613/d4db5189-17c0-457a-aa4e-a1259dfdf2c6)
+![HEXFETCH](https://github.com/hexisXz/hexfetch/assets/71829613/54dc257a-75f8-41e7-bf12-f8f95de94421)
+
 
 
 # about 
