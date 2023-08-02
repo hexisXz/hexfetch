@@ -14,5 +14,5 @@ at the moment it doesn't display that much information and that is by choice but
 # install
 
 ``` sh
-sh <(curl -v -L https://github.com/hexisXz/hexfetch.git)
+sh <(curl -v -L https://raw.githubusercontent.com/hexisXz/hexfetch/main/install.sh)
 ```
