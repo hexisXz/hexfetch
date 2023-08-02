@@ -11,6 +11,28 @@ void print_distroart() {
 }
 
 
+
+void uptime() {
+    char buffer[128];
+    FILE* fp;
+
+    // Get system uptime
+    fp = popen("uptime -p", "r");
+    if (fp == NULL) {
+        perror("Failed to execute command");
+        return;
+    }
+
+    if (fgets(buffer, sizeof(buffer), fp) != NULL) {
+        // Print uptime
+        printf("%-15s %s", "\033[0;31mUptime:  ", buffer);
+    }
+
+    pclose(fp);
+}
+
+
+
 void memory() {
     char buffer[128];
     FILE* fp;
@@ -82,6 +104,7 @@ int main() {
     memory();
     get_kernel_version();
     get_distro_name();
+    uptime();
 
     return 0;
 }
