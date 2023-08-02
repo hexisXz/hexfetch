@@ -1,9 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /* HexFetch 1.0 
 HexFetch 1.0 is created by Hexis and was created to be simple and fast.
 */
+
+
+void current_windowmanager() {
+    char buffer[128];
+    FILE* fp;
+
+    // Get current windowmanager
+    fp = popen("echo $DESKTOP_SESSION", "r");
+    if (fp == NULL) {
+        perror("Failed to execute command");
+        return;
+    }
+
+    if (fgets(buffer, sizeof(buffer), fp) != NULL) {
+        // Print current windowmanager 
+        printf("%-15s %s", "\033[0;33mWM:      ", buffer);
+    }
+
+    pclose(fp);
+
+}
 
 
 void print_distroart() {
@@ -101,6 +123,7 @@ int main() {
     print_distroart();
 
     // Get system information
+    current_windowmanager();
     memory();
     get_kernel_version();
     get_distro_name();
