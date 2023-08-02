@@ -75,7 +75,7 @@ void get_distro_name() {
 
 
 int main() {
-    // Print penguin ASCII art
+    // Print ASCII art
     print_distroart();
 
     // Get system information
